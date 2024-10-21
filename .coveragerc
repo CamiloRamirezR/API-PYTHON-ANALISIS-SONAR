@@ -1,0 +1,8 @@
+[run]
+command_line = -m unittest -v
+branch = True
+relative_files = True
+omit = tests/*
+
+[report]
+fail_under = 70
