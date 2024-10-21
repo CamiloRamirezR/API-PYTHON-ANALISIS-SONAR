@@ -9,6 +9,7 @@ from models import Post
 from unittest.mock import patch
 
 
+
 class TestGetPost(TestCase):
 
     def setUp(self):
