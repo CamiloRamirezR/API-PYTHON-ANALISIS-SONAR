@@ -9,6 +9,7 @@ from models import Post
 from unittest.mock import patch
 
 
+# Test para obtener una publicación
 
 class TestGetPost(TestCase):
 
