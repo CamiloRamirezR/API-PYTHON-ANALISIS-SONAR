@@ -19,25 +19,3 @@ def create_error_response(message):
     return ErrorResponseSchema().dumps(error)
 
 
-def create_error_response_2(message):
-    if isinstance(message, ValidationError):
-        error = {"msg": message.normalized_messages()}
-    else:
-        error = {"msg": message}
-    return ErrorResponseSchema().dumps(error)
-
-
-def create_error_response_3(message):
-    if isinstance(message, ValidationError):
-        error = {"msg": message.normalized_messages()}
-    else:
-        error = {"msg": message}
-    return ErrorResponseSchema().dumps(error)
-
-
-def create_error_response_4(message):
-    if isinstance(message, ValidationError):
-        error = {"msg": message.normalized_messages()}
-    else:
-        error = {"msg": message}
-    return ErrorResponseSchema().dumps(error)
