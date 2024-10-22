@@ -34,7 +34,7 @@ jobs:
       - name: Run tests with coverage
         run: |
           python -m coverage run -m unittest discover tests 
-          python -m coverage xml -i   
+          python -m coverage xml -o coverage.xml   
 
       # 5. SonarCloud Scan
       - name: SonarCloud Scan
